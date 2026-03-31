@@ -1,0 +1,13 @@
+jupyterlab
+notebook
+ipykernel
+pandas
+numpy
+matplotlib
+seaborn
+requests
+beautifulsoup4
+lxml
+openpyxl
+python-dotenv
+
