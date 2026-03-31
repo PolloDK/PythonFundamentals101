@@ -1,109 +1,62 @@
-# Python Fundamentals 101
+# FK Economics Setup
 
-Repositorio base para preparar el entorno de trabajo de las clases de Python Fundamentals 101.
+Repositorio base para preparar el entorno de trabajo de `FK Economics`.
 
-La idea de este proyecto es dejar listo un setup práctico para aprender y enseñar:
+La idea de este proyecto es dejar un setup simple y funcional para trabajar con:
 
-- 🐍 Fundamentos de Python
-- 🤖 Uso de programación asistida con IA
-- 📓 Jupyter Notebook para exploración y prototipado
-- 🌐 Web scraping
-- 🧹 Transformación de datos no estructurados a estructurados
-- 🧠 Uso básico de modelos y flujos de trabajo con notebooks
+- 🐍 Python
+- 📓 Jupyter Notebook
+- 🌐 scraping y recoleccion de datos
+- 🧹 paso de datos no estructurados a estructurados
+- 🤖 programacion asistida con IA
+- 📊 analisis y exploracion de datos
 
-Este repositorio parte como entorno de instalación y configuración. Después se puede ir expandiendo con clases, ejercicios, notebooks y ejemplos reales.
+## 🎯 Objetivo
 
-## 🎯 Objetivo del repositorio
+Este repo servira como base para:
 
-Este repo servirá como base para:
-
-- ✅ Estandarizar el entorno de desarrollo de la clase
-- ✅ Instalar herramientas esenciales desde cero
-- ✅ Trabajar con Python, notebooks y automatización
-- ✅ Integrar herramientas modernas de IA para acelerar aprendizaje y desarrollo
+- ✅ instalar el entorno de trabajo de la clase
+- ✅ dejar VS Code configurado de forma simple
+- ✅ trabajar con Python y notebooks desde el primer dia
+- ✅ usar herramientas de IA para acelerar aprendizaje y desarrollo
 
 ## 🧰 Stack recomendado
 
-Herramientas base para este curso:
-
-- 💻 `VS Code`: editor principal
-- 🐍 `Python 3.11+`: lenguaje principal
-- 📦 `pip`: gestor de paquetes de Python
-- 🔒 `venv`: entornos virtuales
-- 📓 `Jupyter`: notebooks para exploración y demos
-- ⚙️ `Node.js LTS`: necesario para varias herramientas de IA y ecosistema JavaScript
+- 💻 `VS Code`
+- 🐍 `Python 3.11+`
+- 📦 `pip`
+- 📓 `Jupyter`
+- ⚙️ `Node.js LTS`
 
 ## 1. 🚀 Instalar herramientas base
 
 ### 💻 VS Code
 
-Descargar e instalar:
+Descarga:
 
 - https://code.visualstudio.com/
 
 Extensiones recomendadas:
 
-- `Python` de Microsoft
+- `Python`
 - `Pylance`
 - `Jupyter`
 - `Prettier`
 - `Material Icon Theme`
-- `Copilot` si se va a usar
-- `Markdown All in One` para editar documentación
-
-### ⚙️ Configuración básica de VS Code
-
-Configuraciones recomendadas para partir con una experiencia más simple:
-
-- Usar `Command Prompt (cmd)` como terminal por defecto en Windows en vez de PowerShell
-- Activar formateo automático al guardar
-- Usar iconos visuales para reconocer mejor archivos y carpetas
-
-### Cambiar la terminal por defecto a `cmd` en Windows
-
-1. Abrir VS Code
-2. Ir a `Terminal > Select Default Profile`
-3. Elegir `Command Prompt`
-4. Abrir una nueva terminal
-
-También se puede hacer desde configuración buscando:
-
-- `Terminal › Integrated › Default Profile: Windows`
-
-Y seleccionando:
-
-- `Command Prompt`
-
-### Ajustes recomendados
-
-Puedes abrir `Settings` en VS Code y buscar estas opciones:
-
-- `Format On Save`
-- `Terminal Default Profile Windows`
-- `Material Icon Theme`
-
-Si prefieres, también puedes usar una configuración como esta:
-
-```json
-{
-  "editor.formatOnSave": true,
-  "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "workbench.iconTheme": "material-icon-theme"
-}
-```
+- `Markdown All in One`
 
 ### 🐍 Python
 
-Descargar Python:
+Descarga:
 
 - https://www.python.org/downloads/
 
-Recomendación:
+Recomendacion:
 
-- Usar Python `3.11` o superior
-- En Windows, marcar la opción `Add Python to PATH` al instalar
+- usar Python `3.11` o superior
+- en Windows, marcar `Add Python to PATH`
 
-Verificar instalación:
+Verificacion:
 
 ```bash
 python --version
@@ -117,233 +70,238 @@ python3 --version
 
 ### ⚙️ Node.js
 
-Node.js es útil para instalar y usar varias herramientas modernas de IA por terminal, SDKs y CLIs.
+Node.js es necesario para varias herramientas modernas de IA y CLIs.
 
-Descargar versión LTS:
+Descarga:
 
 - https://nodejs.org/
 
-Verificar instalación:
+Verificacion:
 
 ```bash
 node -v
 npm -v
 ```
 
-## 2. 🧪 Crear el entorno del proyecto
+## 2. ⚙️ Configuracion basica de VS Code
 
-Desde la carpeta del repositorio:
+Configuraciones recomendadas para partir:
 
-```bash
-python -m venv .venv
+- usar `Command Prompt (cmd)` como terminal por defecto en Windows
+- activar `format on save`
+- usar `Material Icon Theme`
+- seleccionar Python como interprete del proyecto
+
+### Cambiar terminal por defecto a `cmd`
+
+1. Abrir VS Code
+2. Ir a `Terminal > Select Default Profile`
+3. Elegir `Command Prompt`
+4. Abrir una nueva terminal
+
+Tambien puedes buscar en configuracion:
+
+- `Terminal › Integrated › Default Profile: Windows`
+
+Y dejar:
+
+- `Command Prompt`
+
+### Seleccionar Python como interprete
+
+1. Abrir VS Code en este proyecto
+2. Presionar `Ctrl + Shift + P`
+3. Buscar `Python: Select Interpreter`
+4. Elegir la instalacion de Python que quieras usar
+
+Si instalaste Python desde python.org, normalmente veras algo como:
+
+- `Python 3.11.x`
+- `Python 3.12.x`
+
+### Ajustes recomendados
+
+Puedes aplicar una configuracion como esta en VS Code:
+
+```json
+{
+  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "workbench.iconTheme": "material-icon-theme",
+  "python.defaultInterpreterPath": "python"
+}
 ```
 
-Activar el entorno virtual:
+## 3. 📦 Instalar paquetes base de Python
 
-### macOS / Linux
-
-```bash
-source .venv/bin/activate
-```
-
-### Windows PowerShell
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-Actualizar `pip`:
+Instalacion recomendada:
 
 ```bash
 python -m pip install --upgrade pip
-```
-
-## 3. 📦 Paquetes básicos de Python
-
-Paquetes recomendados para arrancar:
-
-```bash
 pip install jupyterlab notebook ipykernel pandas numpy matplotlib seaborn requests beautifulsoup4 lxml openpyxl python-dotenv
 ```
 
-### ¿Para qué sirve cada uno?
+### ¿Para que sirve cada uno?
 
 - `jupyterlab`: entorno moderno para notebooks
-- `notebook`: soporte clásico de Jupyter
-- `ipykernel`: permite usar el entorno virtual dentro de Jupyter
-- `pandas`: manipulación de datos tabulares
-- `numpy`: operaciones numéricas y arreglos
-- `matplotlib`: gráficos base
-- `seaborn`: visualización de datos más amigable
-- `requests`: llamadas HTTP simples
-- `beautifulsoup4`: parsing de HTML
-- `lxml`: parser rápido para HTML y XML
-- `openpyxl`: lectura y escritura de Excel `.xlsx`
-- `python-dotenv`: manejo de variables de entorno desde archivos `.env`
+- `notebook`: soporte clasico de Jupyter
+- `ipykernel`: integra Python con notebooks
+- `pandas`: manejo de datos tabulares
+- `numpy`: operaciones numericas
+- `matplotlib`: graficos base
+- `seaborn`: visualizacion de datos
+- `requests`: llamadas HTTP
+- `beautifulsoup4`: lectura de HTML
+- `lxml`: parser rapido para HTML y XML
+- `openpyxl`: lectura y escritura de Excel
+- `python-dotenv`: variables de entorno desde `.env`
 
-Si más adelante el curso avanza hacia scraping más robusto, automatización o IA, se pueden sumar paquetes como:
+## 4. 📓 Jupyter
 
-```bash
-pip install selenium playwright scikit-learn
-```
-
-## 4. 📓 Configurar Jupyter
-
-Registrar el entorno virtual como kernel:
-
-```bash
-python -m ipykernel install --user --name pythonfundamentals101 --display-name "Python Fundamentals 101"
-```
-
-Levantar Jupyter Lab:
+Para abrir Jupyter Lab:
 
 ```bash
 jupyter lab
 ```
 
-O usar notebooks clásicos:
+Para abrir Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-## 5. 🤖 Programación asistida con IA
+## 5. 🤖 Herramientas de IA en Windows
 
-La idea del curso no es solo aprender Python, sino también aprender a trabajar con asistentes modernos de desarrollo.
+Esta seccion resume formas practicas de instalar herramientas de IA en Windows usando las instrucciones publicas de cada proveedor.
 
-Casos de uso:
+<details>
+<summary><strong>Copilot en VS Code</strong></summary>
 
-- ✍️ Explicar código
-- ⚡ Generar borradores de funciones
-- 🛠️ Refactorizar
-- 🧪 Escribir tests
-- 📓 Crear notebooks base
-- 🕸️ Ayudar con scraping y limpieza de datos
-- 🧹 Traducir datos desordenados a estructuras más limpias
+Segun GitHub Docs, la forma base de comenzar es:
 
-## 6. 🧠 Herramientas de IA recomendadas
+1. Tener acceso a Copilot
+2. Instalar la extension de Copilot en tu IDE
+3. Iniciar sesion
 
-### Opción A: Copilot en VS Code
+Pasos practicos en Windows:
 
-Útil para autocompletado y asistencia directa dentro del editor.
+1. Abrir VS Code
+2. Ir a `Extensions`
+3. Buscar `Copilot`
+4. Instalar la extension oficial
+5. Iniciar sesion cuando VS Code lo pida
 
-Requiere:
+Referencia oficial:
 
-- Cuenta habilitada para la herramienta
-- Suscripción o acceso activo
-- Extensión `Copilot`
+- https://docs.github.com/copilot/get-started/setting-up-github-copilot/setting-up-github-copilot-for-yourself
 
-### Opción B: Gemini CLI / herramientas de Google
+</details>
 
-Dependiendo del flujo que quieras usar, muchas herramientas de IA modernas se apoyan en `Node.js` y/o SDKs de JavaScript o Python.
+<details>
+<summary><strong>Gemini CLI</strong></summary>
 
-Antes de instalar cualquier CLI:
+El repositorio oficial de Gemini CLI usa `npm` para la instalacion.
 
-- Revisar la documentación oficial del proveedor
-- Confirmar método de autenticación
-- Guardar llaves en variables de entorno, no en el código
+Pasos en Windows:
 
-### Opción C: Claude
+1. Instalar `Node.js LTS`
+2. Abrir `cmd`
+3. Ejecutar:
 
-Claude puede usarse desde web, API o herramientas asociadas según el flujo de trabajo disponible.
+```bash
+npm install -g @google/gemini-cli
+```
 
-Buenas prácticas:
+4. Luego ejecutar:
 
-- Mantener prompts claros
-- No pegar credenciales ni secretos
-- Usarlo como copiloto, no como sustituto de validación técnica
+```bash
+gemini
+```
 
-### Opción D: Codex / agentes de código
+Normalmente la herramienta te guiara para iniciar sesion o usar una API key, segun el flujo disponible.
 
-Para trabajar con agentes por terminal o integración con editor, normalmente necesitarás:
+Referencia oficial:
 
-- `Node.js` instalado
-- Acceso al proveedor correspondiente
-- Variables de entorno o login según la herramienta
+- https://github.com/google-gemini/gemini-cli
 
-La instalación exacta puede cambiar según el proveedor o CLI que se use. Recomendación:
+</details>
 
-- Instalar siempre desde documentación oficial
-- Verificar con `--version`
-- Probar primero en un repo simple como este
+<details>
+<summary><strong>Claude Code</strong></summary>
 
-## 7. 🗂️ Recomendación de estructura futura del repo
+La documentacion oficial de Anthropic indica para Windows:
 
-Una estructura simple para ir creciendo el curso:
+- `Windows 10+`
+- `Node.js 18+`
+- uso mediante `WSL` o `Git for Windows`
+
+Instalacion base:
+
+1. Instalar `Node.js`
+2. Instalar `Git for Windows` si hace falta
+3. Abrir una terminal compatible
+4. Ejecutar:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+5. Luego iniciar la herramienta con:
+
+```bash
+claude
+```
+
+Referencia oficial:
+
+- https://docs.anthropic.com/en/docs/claude-code/setup
+
+</details>
+
+<details>
+<summary><strong>Codex</strong></summary>
+
+OpenAI indica que Codex puede usarse desde la app, terminal o IDE, y que la app de Codex ya esta disponible en Windows para planes de ChatGPT que incluyen Codex.
+
+Camino simple en Windows:
+
+1. Revisar acceso a Codex desde tu plan
+2. Instalar o abrir la app de Codex en Windows
+3. Iniciar sesion con tu cuenta de ChatGPT
+4. Abrir una carpeta de trabajo y empezar a usarlo
+
+Referencias oficiales:
+
+- https://openai.com/codex/get-started/
+- https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan%28.csv
+- https://help.openai.com/en/articles/6825453-chatgpt-usage-limits
+
+</details>
+
+## 6. 🗂️ Estructura recomendada del repo
+
+Una estructura simple para este curso:
 
 ```text
-PythonFundamentals101/
-├── README.md
-├── requirements.txt
+FKEconomics/
+├── data/
 ├── notebooks/
-├── clases/
-├── ejercicios/
-├── datasets/
-├── scripts/
-└── recursos/
+└── src/
 ```
 
 ### Sugerencia por carpeta
 
-- `notebooks/`: demos en Jupyter
-- `clases/`: material por sesión
-- `ejercicios/`: práctica para alumnos
-- `datasets/`: datos estructurados o crudos
-- `scripts/`: utilidades en Python
-- `recursos/`: apuntes, guías y referencias
+- `data/`: datos crudos, intermedios o limpios
+- `notebooks/`: exploracion, demos y clases en Jupyter
+- `src/`: scripts y codigo reutilizable
 
-## 8. 📄 Archivo `requirements.txt`
-
-Más adelante puedes crear un `requirements.txt` con algo como esto:
-
-```txt
-jupyterlab
-notebook
-ipykernel
-pandas
-numpy
-matplotlib
-seaborn
-requests
-beautifulsoup4
-lxml
-openpyxl
-python-dotenv
-```
-
-Instalación:
-
-```bash
-pip install -r requirements.txt
-```
-
-## 9. ✅ Primer checklist de setup
+## 7. ✅ Checklist rapido
 
 - ⬜ Instalar VS Code
 - ⬜ Instalar Python 3.11+
 - ⬜ Instalar Node.js LTS
-- ⬜ Crear y activar `.venv`
+- ⬜ Instalar extensiones base en VS Code
+- ⬜ Dejar `cmd` como terminal por defecto
+- ⬜ Seleccionar Python como interprete
 - ⬜ Instalar paquetes base con `pip`
-- ⬜ Registrar kernel de Jupyter
-- ⬜ Abrir el proyecto en VS Code
-
-## 10. 📚 Próximos pasos
-
-Después del setup, este repo puede crecer con sesiones como:
-
-- `Clase 01`: variables, tipos, condicionales y loops
-- `Clase 02`: funciones, módulos y manejo de errores
-- `Clase 03`: listas, diccionarios y comprensión de datos
-- `Clase 04`: lectura de archivos y CSV
-- `Clase 05`: scraping básico con `requests` y `BeautifulSoup`
-- `Clase 06`: limpieza y estructuración de datos con `pandas`
-- `Clase 07`: notebooks, visualización y análisis exploratorio
-- `Clase 08`: uso práctico de asistentes de IA para programar mejor
-
-## 📝 Nota
-
-Este `README` es la base del entorno. La siguiente etapa ideal es agregar:
-
-- `requirements.txt`
-- estructura de carpetas del curso
-- primer notebook de bienvenida
+- ⬜ Abrir Jupyter
