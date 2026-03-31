@@ -4,41 +4,38 @@ Repositorio base para preparar el entorno de trabajo de las clases de Python Fun
 
 La idea de este proyecto es dejar listo un setup práctico para aprender y enseñar:
 
-- Fundamentos de Python
-- Uso de programación asistida con IA
-- Jupyter Notebook para exploración y prototipado
-- Web scraping
-- Transformación de datos no estructurados a estructurados
-- Uso básico de modelos y flujos de trabajo con notebooks
+- 🐍 Fundamentos de Python
+- 🤖 Uso de programación asistida con IA
+- 📓 Jupyter Notebook para exploración y prototipado
+- 🌐 Web scraping
+- 🧹 Transformación de datos no estructurados a estructurados
+- 🧠 Uso básico de modelos y flujos de trabajo con notebooks
 
 Este repositorio parte como entorno de instalación y configuración. Después se puede ir expandiendo con clases, ejercicios, notebooks y ejemplos reales.
 
-## Objetivo del repositorio
+## 🎯 Objetivo del repositorio
 
 Este repo servirá como base para:
 
-- Estandarizar el entorno de desarrollo de la clase
-- Instalar herramientas esenciales desde cero
-- Trabajar con Python, notebooks y automatización
-- Integrar herramientas modernas de IA para acelerar aprendizaje y desarrollo
-- Versionar el material en GitHub
+- ✅ Estandarizar el entorno de desarrollo de la clase
+- ✅ Instalar herramientas esenciales desde cero
+- ✅ Trabajar con Python, notebooks y automatización
+- ✅ Integrar herramientas modernas de IA para acelerar aprendizaje y desarrollo
 
-## Stack recomendado
+## 🧰 Stack recomendado
 
 Herramientas base para este curso:
 
-- `VS Code`: editor principal
-- `Python 3.11+`: lenguaje principal
-- `pip`: gestor de paquetes de Python
-- `venv`: entornos virtuales
-- `Jupyter`: notebooks para exploración y demos
-- `Node.js LTS`: necesario para varias herramientas de IA y ecosistema JavaScript
-- `Git`: control de versiones
-- `GitHub`: publicación y colaboración del contenido del curso
+- 💻 `VS Code`: editor principal
+- 🐍 `Python 3.11+`: lenguaje principal
+- 📦 `pip`: gestor de paquetes de Python
+- 🔒 `venv`: entornos virtuales
+- 📓 `Jupyter`: notebooks para exploración y demos
+- ⚙️ `Node.js LTS`: necesario para varias herramientas de IA y ecosistema JavaScript
 
-## 1. Instalar herramientas base
+## 1. 🚀 Instalar herramientas base
 
-### VS Code
+### 💻 VS Code
 
 Descargar e instalar:
 
@@ -49,10 +46,53 @@ Extensiones recomendadas:
 - `Python` de Microsoft
 - `Pylance`
 - `Jupyter`
-- `GitHub Copilot` si se va a usar
+- `Prettier`
+- `Material Icon Theme`
+- `Copilot` si se va a usar
 - `Markdown All in One` para editar documentación
 
-### Python
+### ⚙️ Configuración básica de VS Code
+
+Configuraciones recomendadas para partir con una experiencia más simple:
+
+- Usar `Command Prompt (cmd)` como terminal por defecto en Windows en vez de PowerShell
+- Activar formateo automático al guardar
+- Usar iconos visuales para reconocer mejor archivos y carpetas
+
+### Cambiar la terminal por defecto a `cmd` en Windows
+
+1. Abrir VS Code
+2. Ir a `Terminal > Select Default Profile`
+3. Elegir `Command Prompt`
+4. Abrir una nueva terminal
+
+También se puede hacer desde configuración buscando:
+
+- `Terminal › Integrated › Default Profile: Windows`
+
+Y seleccionando:
+
+- `Command Prompt`
+
+### Ajustes recomendados
+
+Puedes abrir `Settings` en VS Code y buscar estas opciones:
+
+- `Format On Save`
+- `Terminal Default Profile Windows`
+- `Material Icon Theme`
+
+Si prefieres, también puedes usar una configuración como esta:
+
+```json
+{
+  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "workbench.iconTheme": "material-icon-theme"
+}
+```
+
+### 🐍 Python
 
 Descargar Python:
 
@@ -75,19 +115,7 @@ Si no funciona:
 python3 --version
 ```
 
-### Git
-
-Descargar Git:
-
-- https://git-scm.com/downloads
-
-Verificar instalación:
-
-```bash
-git --version
-```
-
-### Node.js
+### ⚙️ Node.js
 
 Node.js es útil para instalar y usar varias herramientas modernas de IA por terminal, SDKs y CLIs.
 
@@ -102,7 +130,7 @@ node -v
 npm -v
 ```
 
-## 2. Crear el entorno del proyecto
+## 2. 🧪 Crear el entorno del proyecto
 
 Desde la carpeta del repositorio:
 
@@ -130,7 +158,7 @@ Actualizar `pip`:
 python -m pip install --upgrade pip
 ```
 
-## 3. Paquetes básicos de Python
+## 3. 📦 Paquetes básicos de Python
 
 Paquetes recomendados para arrancar:
 
@@ -159,7 +187,7 @@ Si más adelante el curso avanza hacia scraping más robusto, automatización o 
 pip install selenium playwright scikit-learn
 ```
 
-## 4. Configurar Jupyter
+## 4. 📓 Configurar Jupyter
 
 Registrar el entorno virtual como kernel:
 
@@ -179,31 +207,31 @@ O usar notebooks clásicos:
 jupyter notebook
 ```
 
-## 5. Programación asistida con IA
+## 5. 🤖 Programación asistida con IA
 
 La idea del curso no es solo aprender Python, sino también aprender a trabajar con asistentes modernos de desarrollo.
 
 Casos de uso:
 
-- Explicar código
-- Generar borradores de funciones
-- Refactorizar
-- Escribir tests
-- Crear notebooks base
-- Ayudar con scraping y limpieza de datos
-- Traducir datos desordenados a estructuras más limpias
+- ✍️ Explicar código
+- ⚡ Generar borradores de funciones
+- 🛠️ Refactorizar
+- 🧪 Escribir tests
+- 📓 Crear notebooks base
+- 🕸️ Ayudar con scraping y limpieza de datos
+- 🧹 Traducir datos desordenados a estructuras más limpias
 
-## 6. Herramientas de IA recomendadas
+## 6. 🧠 Herramientas de IA recomendadas
 
-### Opción A: GitHub Copilot en VS Code
+### Opción A: Copilot en VS Code
 
 Útil para autocompletado y asistencia directa dentro del editor.
 
 Requiere:
 
-- Cuenta de GitHub
-- Suscripción o acceso habilitado
-- Extensión `GitHub Copilot`
+- Cuenta habilitada para la herramienta
+- Suscripción o acceso activo
+- Extensión `Copilot`
 
 ### Opción B: Gemini CLI / herramientas de Google
 
@@ -239,14 +267,13 @@ La instalación exacta puede cambiar según el proveedor o CLI que se use. Recom
 - Verificar con `--version`
 - Probar primero en un repo simple como este
 
-## 7. Recomendación de estructura futura del repo
+## 7. 🗂️ Recomendación de estructura futura del repo
 
 Una estructura simple para ir creciendo el curso:
 
 ```text
 PythonFundamentals101/
 ├── README.md
-├── .gitignore
 ├── requirements.txt
 ├── notebooks/
 ├── clases/
@@ -265,7 +292,7 @@ PythonFundamentals101/
 - `scripts/`: utilidades en Python
 - `recursos/`: apuntes, guías y referencias
 
-## 8. Archivo `requirements.txt`
+## 8. 📄 Archivo `requirements.txt`
 
 Más adelante puedes crear un `requirements.txt` con algo como esto:
 
@@ -290,50 +317,17 @@ Instalación:
 pip install -r requirements.txt
 ```
 
-## 9. Inicializar Git y conectar a GitHub
+## 9. ✅ Primer checklist de setup
 
-Si todavía no has iniciado Git en esta carpeta:
+- ⬜ Instalar VS Code
+- ⬜ Instalar Python 3.11+
+- ⬜ Instalar Node.js LTS
+- ⬜ Crear y activar `.venv`
+- ⬜ Instalar paquetes base con `pip`
+- ⬜ Registrar kernel de Jupyter
+- ⬜ Abrir el proyecto en VS Code
 
-```bash
-git init
-git add .
-git commit -m "chore: initial setup for Python Fundamentals 101"
-```
-
-Luego crea un repositorio vacío en GitHub y conéctalo:
-
-```bash
-git remote add origin <URL_DEL_REPO>
-git branch -M main
-git push -u origin main
-```
-
-Ejemplo de URL:
-
-```bash
-git remote add origin git@github.com:TU_USUARIO/PythonFundamentals101.git
-```
-
-O usando HTTPS:
-
-```bash
-git remote add origin https://github.com/TU_USUARIO/PythonFundamentals101.git
-```
-
-## 10. Primer checklist de setup
-
-- Instalar VS Code
-- Instalar Python 3.11+
-- Instalar Git
-- Instalar Node.js LTS
-- Crear y activar `.venv`
-- Instalar paquetes base con `pip`
-- Registrar kernel de Jupyter
-- Abrir el proyecto en VS Code
-- Inicializar Git
-- Subir el repo a GitHub
-
-## 11. Próximos pasos
+## 10. 📚 Próximos pasos
 
 Después del setup, este repo puede crecer con sesiones como:
 
@@ -346,11 +340,10 @@ Después del setup, este repo puede crecer con sesiones como:
 - `Clase 07`: notebooks, visualización y análisis exploratorio
 - `Clase 08`: uso práctico de asistentes de IA para programar mejor
 
-## Nota
+## 📝 Nota
 
 Este `README` es la base del entorno. La siguiente etapa ideal es agregar:
 
-- `.gitignore`
 - `requirements.txt`
 - estructura de carpetas del curso
 - primer notebook de bienvenida
