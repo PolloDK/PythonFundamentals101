@@ -305,3 +305,61 @@ FKEconomics/
 - ⬜ Seleccionar Python como interprete
 - ⬜ Instalar paquetes base con `pip`
 - ⬜ Abrir Jupyter
+
+## 8. 💻 Llevar este repo a VS Code
+
+Para trabajar con este repositorio en tu computador, tienes dos opciones simples.
+
+### Opcion A: clonar el repositorio
+
+1. Copiar la URL del repositorio
+2. Abrir `cmd`
+3. Ir a la carpeta donde quieres guardar el proyecto
+4. Ejecutar:
+
+```bash
+git clone <URL_DEL_REPO>
+```
+
+5. Entrar a la carpeta:
+
+```bash
+cd PythonFundamentals101
+```
+
+6. Abrir VS Code en esa carpeta:
+
+```bash
+code .
+```
+
+Si `code .` no funciona, puedes abrir VS Code manualmente y luego ir a:
+
+- `File > Open Folder`
+
+### Opcion B: descargar ZIP
+
+1. Entrar al repositorio en GitHub
+2. Descargar `Code > Download ZIP`
+3. Descomprimir la carpeta
+4. Abrir VS Code
+5. Ir a `File > Open Folder`
+6. Elegir la carpeta del proyecto
+
+### Una vez abierto en VS Code
+
+Haz estas tres cosas:
+
+1. Abrir una terminal
+2. Verificar Python con:
+
+```bash
+python --version
+```
+
+3. Instalar paquetes base:
+
+```bash
+python -m pip install --upgrade pip
+pip install jupyterlab notebook ipykernel pandas numpy matplotlib seaborn requests beautifulsoup4 lxml openpyxl python-dotenv
+```
